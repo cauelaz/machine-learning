@@ -1,0 +1,50 @@
+{
+  "dataset": "cats_vs_dogs/4.0.1",
+  "classes": [
+    "cat",
+    "dog"
+  ],
+  "seed": 42,
+  "image_size": [
+    160,
+    160
+  ],
+  "batch_size": 32,
+  "split": [
+    "train[:80%]",
+    "train[80%:90%]",
+    "train[90%:]"
+  ],
+  "initial_epochs": 5,
+  "fine_tune_epochs": 5,
+  "fine_tune_layers": 30,
+  "learning_rates": {
+    "feature_extraction": 0.001,
+    "fine_tuning": 1e-05
+  },
+  "run_fine_tuning": true,
+  "selected_checkpoint": "fine-tuning.keras",
+  "validation_loss_by_checkpoint": {
+    "feature-extraction.keras": 0.044352974742650986,
+    "fine-tuning.keras": 0.038594819605350494
+  },
+  "test_metrics": {
+    "accuracy": 0.9879621863365173,
+    "loss": 0.03672315180301666
+  },
+  "confusion_matrix": [
+    [
+      1142,
+      18
+    ],
+    [
+      10,
+      1156
+    ]
+  ],
+  "versions": {
+    "tensorflow": "2.20.0",
+    "tfds": "4.9.10",
+    "numpy": "2.1.3"
+  }
+}
