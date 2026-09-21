@@ -1,0 +1,11 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.env
+*.keras
+*.h5
+*.weights.h5
+*.zip
+artifacts/
+data/
+tensorflow_datasets/
